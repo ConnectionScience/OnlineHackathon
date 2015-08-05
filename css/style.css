@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	width: 100%;
 }
 
 nav {
@@ -8,7 +9,7 @@ nav {
 
 body {
 
-	background-image: url('../img/hackathon.jpg');
+	/*background-image: url('../img/hackathon.jpg');*/
 	background-repeat:no-repeat;
     background-size:100% 100%;
 }
@@ -16,19 +17,42 @@ body {
 #mainPageTitle {
 	color: white;
 	text-align: center;
+	font-size: 5em;
 }
 
 #mainSignup {
 	width: 200px;
 	margin: 0 auto;
 	display: block;
+	background-image: url('../img/google-oauth-button.png');
+	background-size: 100% 100%;
+	background-color: white;
 }
 
 #mainPageCenterWrapper {
-	max-width: 400px;
+	height: 100%;
+	width: 100%;
 	margin: 0 auto;
 	display: block;
 	position: relative;
   top: 40%;
   transform: translateY(-50%);
+}
+
+.dominos {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.slick-track, .slick-list{
+	height: 100%;
+}
+
+button.slick-arrow {
+    display: none !important;
+}
+
+.card-panel.dominos.slick-slide.slick-current.slick-active {
+	margin-top: 50px !important;
 }

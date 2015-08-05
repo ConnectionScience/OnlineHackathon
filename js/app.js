@@ -1,0 +1,1 @@
+$("#mainPageCenterWrapper").slick({infinite: false});
